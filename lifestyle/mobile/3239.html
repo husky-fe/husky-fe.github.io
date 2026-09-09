@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="lifestyle-mobile.css">
+  </head>
+  <body>
+    <div id="overlay" class="push-overlay"></div>
+    <div class="container">
+      <div class="wrapper">
+        <header class="fixed top">
+          <div class="header-navbar">
+            <!-- Left -->
+            <div class="hn-left">
+              <a href="javascript: history.go(-1);" class="btn-link">
+                <i class="icon icon-arrow-left"></i>
+              </a>
+            </div>
+            <!-- Right -->
+            <div class="hn-right">
+              <a href="" class="btn-link fontsizeset-btn">
+                <i class="icon icon-fontsetting"></i>
+              </a>
+              <a href="#shareBox" class="btn-link btn-share-with-article">
+                <i class="icon icon-share-white"></i>
+              </a>
+            </div>
+            <!-- Center -->
+            <div class="hn-middle">
+              <h1 class="title"></h1>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="fontsize-control-bar">
+            <span class="label">文字大小</span>
+            <div data-view="#js-fontsize-view" class="fontsize-control-btn-box js-fontsize">
+              <a href="javascript:void(0);" data-size="small" class="btn-link">
+                <i class="icon icon-fontsize-small"></i>
+              </a>
+              <a href="javascript:void(0);" data-size="medium" class="btn-link">
+                <i class="icon icon-fontsize-midden"></i>
+              </a>
+              <a href="javascript:void(0);" data-size="large" class="btn-link">
+                <i class="icon icon-fontsize-large"></i>
+              </a>
+            </div>
+          </div>
+          <div id="shareBox" class="share-dialog">
+            <div class="dialog-content">
+              <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.senao.com.tw%2Fm%2FArticle%2Fdetail%2F3107" class="btn btn-share-fb">facebook 分享</a>
+              <a target="_blank" href="http://line.naver.jp/R/msg/text/?https%3A%2F%2Fonline.senao.com.tw%2Fm%2FArticle%2Fdetail%2F3107" class="btn btn-share-line">LINE 分享</a>
+            </div>
+          </div>
+          <div class="iframe-wrap article">
+            <div class="article-head">
+              <h1>【神腦 AI+】Google AI 方案全面解析：Plus、Pro、Ultra 完整比較與選擇指南</h1>
+              <!-- <span class="article-tag article-tag-class5">應用程式</span> -->
+              <span class="datetime">
+                <i class="icon icon-time"></i>
+                2026-01-28 13:33:00
+              </span>
+            </div>
+            <div id="js-fontsize-view" class="article-body">
+              <p>這是一篇用於檢測 CMS 編輯器極限的測試文章。內容涵蓋了基礎的 HTML 結構（如模擬 Word 貼上的表格）到進階的 CSS 排版（如凸顯選定項目的定價表），以及高解析度圖片的響應式表現。</p>
+                  <p>參考連結範例： <a href="http://online.senao.com.tw/" rel="noopener noreferrer" style="color: #d32f2f; text-decoration: underline; font-weight: bold;" target="_blank">神腦國際 Senao Online</a>。 <br>
+                    <br>
+                    <br>
+                    <img alt="" src="https://stgstatic.senao.com.tw/Scare/media/6d27a92d-8a82-483e-b799-fc22e0a43738.png">
+                  </p>
+                  <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+                  <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; margin-bottom: 40px; border-left: 5px solid #607d8b;">
+                    <h3 style="margin-top: 0;">文章目錄 (Anchor Navigation)</h3>
+                    <ul>
+                      <li>
+                        <a href="#section-images" style="text-decoration: none; color: #0277bd;">1. 圖片響應式測試 (2K 與特殊尺寸)</a>
+                      </li>
+                      <li>
+                        <a href="#section-simple-tables" style="text-decoration: none; color: #0277bd;">2. 基礎表格測試 (模擬 Word 與 簡單樣式)</a>
+                      </li>
+                      <li>
+                        <a href="#section-pricing-table" style="text-decoration: none; color: #0277bd;">3. 視覺凸顯表格 (定價方案)</a>
+                      </li>
+                      <li>
+                        <a href="#section-complex-table" style="text-decoration: none; color: #0277bd;">4. 複雜數據結構 (跨欄跨列)</a>
+                      </li>
+                      <li>
+                        <a href="#section-lists-media" style="text-decoration: none; color: #0277bd;">5. 列表與影片嵌入</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 id="section-images" style="border-bottom: 2px solid #333; padding-bottom: 10px;">1. 圖片響應式測試 (無容器包覆)</h2>
+                  <p>此區塊測試圖片在沒有 <code>div</code> 或 <code>figure</code> 包覆下，是否能自動適應螢幕寬度 (max-width: 100%)。 </p>
+                  <h3>測試 A：2K 高解析度圖片 (2560x1440)</h3>
+                  <img alt="2560x1440 高解析度測試圖" src="https://placehold.co/2560x1440/1a237e/ffffff?text=2K+Resolution+Test+Image" style="display: block; margin: 20px 0px;">
+                  <h3>測試 B：指定尺寸圖片 (961x964)</h3>
+                  <p>測試近乎正方形的圖片在文中的排版效果。</p>
+                  <img alt="神腦國際促銷活動示意圖" src="https://stgstatic.senao.com.tw/Scare/media/3a9dec76-8f26-4778-89f6-554844d87c31.png" style="display: block; margin: 20px 0px;">
+                  <p style="font-size: 0.9em; color: #666; text-align: center;">▲ 圖說：來自外部圖床的真實行銷素材測試。</p>
+                  <h2 id="section-simple-tables" style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 60px;">2. 基礎表格測試</h2>
+                  <h3>測試 A：模擬 Word 貼上 (無樣式)</h3>
+                  <p>此表格僅保留最基礎的 HTML 標籤與 <code>border="1"</code> 屬性，測試網站的全域預設樣式 (Reset CSS)。 </p>
+                  <div style="overflow-x: auto; margin-bottom: 30px;">
+                    <table border="1" cellpadding="5" cellspacing="0" style="width: 100%;">
+                      <thead>
+                        <tr>
+                          <th>排名</th>
+                          <th>關鍵字</th>
+                          <th>搜尋量</th>
+                          <th>趨勢</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>iPhone 16</td>
+                          <td>1,500,000</td>
+                          <td>上升</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Samsung S24</td>
+                          <td>800,000</td>
+                          <td>持平</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Pixel 9</td>
+                          <td>300,000</td>
+                          <td>上升</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h3>測試 B：海洋藍系簡單表格 (含 Inline CSS)</h3>
+                  <p>測試基礎的背景色與邊框樣式。</p>
+                  <div style="overflow-x: auto; margin-bottom: 30px; border: 1px solid #0277bd; border-radius: 4px;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                      <thead>
+                        <tr style="background-color: #0277bd; color: white;">
+                          <th style="padding: 10px; border-right: 1px solid #4fc3f7;">月份</th>
+                          <th style="padding: 10px; border-right: 1px solid #4fc3f7;">訪客數</th>
+                          <th style="padding: 10px;">轉換率</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr style="background-color: #e1f5fe;">
+                          <td style="padding: 10px; border-bottom: 1px solid #b3e5fc; color: #01579b;">一月 (Jan)</td>
+                          <td style="padding: 10px; border-bottom: 1px solid #b3e5fc; text-align: center;">10,500</td>
+                          <td style="padding: 10px; border-bottom: 1px solid #b3e5fc; text-align: center; font-weight: bold;">2.5%</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border-bottom: 1px solid #b3e5fc; color: #01579b;">二月 (Feb)</td>
+                          <td style="padding: 10px; border-bottom: 1px solid #b3e5fc; text-align: center;">12,000</td>
+                          <td style="padding: 10px; border-bottom: 1px solid #b3e5fc; text-align: center; font-weight: bold;">2.8%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h2 id="section-pricing-table" style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 60px;">3. 視覺凸顯表格 (定價方案)</h2>
+              <p>此表格模擬「推薦方案」被選中的狀態，測試 CSS 的陰影、粗框線與背景跳色效果。</p>
+              <div style="overflow-x: auto; padding: 10px;">
+                <table style="width: 100%; border-collapse: separate; border-spacing: 0;">
+                  <thead>
+                    <tr>
+                      <th style="width: 30%; padding: 15px; border-bottom: 2px solid #ccc; background-color: #f9f9f9; color: #666;">入門版</th>
+                      <th style="width: 40%; padding: 20px; border: 3px solid #ff6f00; border-bottom: none; background-color: #fff8e1; color: #ff6f00; border-radius: 10px 10px 0 0; font-size: 1.2em;">🔥 專業推薦版</th>
+                      <th style="width: 30%; padding: 15px; border-bottom: 2px solid #ccc; background-color: #f9f9f9; color: #666;">旗艦版</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="padding: 15px; border-bottom: 1px solid #eee; text-align: center; color: #666;">功能 A：基本的</td>
+                      <td style="padding: 15px; border-left: 3px solid #ff6f00; border-right: 3px solid #ff6f00; border-bottom: 1px solid #ffecb3; background-color: #fff8e1; text-align: center; font-weight: bold; color: #333;">功能 A：進階的</td>
+                      <td style="padding: 15px; border-bottom: 1px solid #eee; text-align: center; color: #666;">功能 A：頂級的</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 15px; border-bottom: 1px solid #eee; text-align: center; color: #666;">支援：Email</td>
+                      <td style="padding: 15px; border-left: 3px solid #ff6f00; border-right: 3px solid #ff6f00; border-bottom: 1px solid #ffecb3; background-color: #fff8e1; text-align: center; font-weight: bold; color: #333;">支援：24h 線上</td>
+                      <td style="padding: 15px; border-bottom: 1px solid #eee; text-align: center; color: #666;">支援：專屬顧問</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 20px; border-bottom: 1px solid #ccc; text-align: center;">$0 / 月</td>
+                      <td style="padding: 20px; border: 3px solid #ff6f00; border-top: none; border-radius: 0 0 10px 10px; background-color: #fff8e1; text-align: center; font-size: 1.5em; font-weight: bold; color: #d84315;">$499 / 月</td>
+                      <td style="padding: 20px; border-bottom: 1px solid #ccc; text-align: center;">$999 / 月</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 id="section-complex-table" style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 60px;">4. 複雜數據結構 (跨欄跨列)</h2>
+              <p>測試 Rowspan 與 Colspan 的混合運用，以及不同區塊的色彩區隔。</p>
+              <div style="overflow-x: auto; border: 2px solid #455a64; margin-bottom: 30px;">
+                <table style="width: 100%; border-collapse: collapse;">
+                  <thead>
+                    <tr style="background-color: #455a64; color: white;">
+                      <th rowspan="2" style="padding: 10px; border: 1px solid #607d8b;">區域</th>
+                      <th rowspan="2" style="padding: 10px; border: 1px solid #607d8b;">門市名稱</th>
+                      <th colspan="2" style="padding: 10px; border: 1px solid #607d8b; text-align: center;">庫存狀態</th>
+                      <th rowspan="2" style="padding: 10px; border: 1px solid #607d8b;">備註</th>
+                    </tr>
+                    <tr style="background-color: #546e7a; color: white;">
+                      <th style="padding: 5px; border: 1px solid #78909c; font-size: 0.9em;">現貨</th>
+                      <th style="padding: 5px; border: 1px solid #78909c; font-size: 0.9em;">預購</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td rowspan="2" style="padding: 10px; border: 1px solid #cfd8dc; background-color: #eceff1; font-weight: bold; width: 15%;">北區</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc;">台北信義店</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center; color: green;">充足</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center;">-</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc;">旗艦體驗中心</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc;">新北板橋店</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center; color: red;">缺貨</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center; color: orange;">開放 (3天)</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc;">僅提供取貨</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2" style="padding: 10px; border: 1px solid #cfd8dc; background-color: #eceff1; font-weight: bold;">中區</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc;">台中逢甲店</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center; color: orange;">緊張</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center;">-</td>
+                      <td rowspan="2" style="padding: 10px; border: 1px solid #cfd8dc; text-align: center; vertical-align: middle; background-color: #fffde7;">週末延長營業</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc;">台中勤美店</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center; color: green;">充足</td>
+                      <td style="padding: 10px; border: 1px solid #cfd8dc; text-align: center;">-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <h2 id="section-lists-media" style="border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 60px;">5. 列表與影片嵌入</h2>
+              <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px;">
+                <div style="flex: 1; min-width: 300px;">
+                  <h3>有序列表 (SEO 檢查清單)</h3>
+                  <ol>
+                    <li>
+                      <strong>Title Tag:</strong> 需包含核心關鍵字。
+                    </li>
+                    <li>
+                      <strong>Meta Description:</strong> 吸引點擊的文案。
+                    </li>
+                    <li>
+                      <strong>H1-H6:</strong> 結構化層級分明。
+                    </li>
+                  </ol>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                  <h3>無序列表 (常見錯誤)</h3>
+                  <ul>
+                    <li>
+                      <mark>圖片檔案過大</mark> (未壓縮)。
+                    </li>
+                    <li>網址結構混亂 (URL Structure)。</li>
+                    <li>缺乏行動版頁面 (Mobile Friendly)。</li>
+                  </ul>
+                </div>
+              </div>
+              <h3>YouTube 影片嵌入測試</h3>
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 30px; background: #000;">
+                <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/7zxQie83Bpw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player"></iframe>
+              </div>
+              <p style="text-align: center; margin-top: 50px; font-size: 0.9em; color: #888;">End of Test Document - Generated by Gemini <br>
+                <br>
+                <br>
+                <img src="https://stgstatic.senao.com.tw/Scare/media/9a6a266a-baab-4b32-ad80-35e14a26b7fc.png">
+                <br>
+                <iframe allowfullscreen="" frameborder="0" height="493" src="https://www.youtube.com/embed/ynrTSQ0SJJ4" width="876"></iframe>
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="fixed bottom">
+        <!-- cookie popup 視窗 -->
+        <!-- 網站有紀錄 cookie 的提醒視窗 -->
+        <div class="model-cookie fixed" id="model-cookie" style="display:none">
+          <div class="container text-center">
+            <a class="icon icon-close pull-right" onclick="cancelCookie();"></a>
+            <p class="p-inline">本網站使用cookies以提供更優質的購物體驗，若您繼續瀏覽本網站內容，即表示您同意本網站使用cookie。如欲了解更多資訊，請參閱本網站之 <a class="blue underline" href="/m/FAQ/showTerms#privacy">隱私權政策</a>
+            </p>
+            <div class="text-center spacing top sm">
+              <a class="btn btn-query btn-round" href="#" onclick="agreeCookie();">我同意</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <!-- 單元當頁加active-->
+          <a class="f_menu_01" href="/m" onclick="forwardAndSendGa4('HomePage');">首頁</a>
+          <a class="f_menu_02" href="/m/Favorite" onclick="forwardAndSendGa4('Favorite');">收藏清單</a>
+          <a class="f_menu_06" href="/m/live" onclick="forwardAndSendGa4('Live');">影音</a>
+          <a class="f_menu_04" href="https://stgcart.senao.com.tw/m/cart/choice" onclick="forwardAndSendGa4('Cart');">購物車 <span id="cart-items-total">0</span></a>
+          <a class="f_menu_05" onclick="javascript:alert('請先登入會員！');location.href='/login?redirect=/m/Member';" title="會員中心">會員中心</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

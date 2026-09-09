@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="lifestyle-mobile.css">
+  </head>
+  <body>
+    <div id="overlay" class="push-overlay"></div>
+    <div class="container">
+      <div class="wrapper">
+        <header class="fixed top">
+          <div class="header-navbar">
+            <!-- Left -->
+            <div class="hn-left">
+              <a href="javascript: history.go(-1);" class="btn-link">
+                <i class="icon icon-arrow-left"></i>
+              </a>
+            </div>
+            <!-- Right -->
+            <div class="hn-right">
+              <a href="javascript:void(0);" class="btn-link"><i class="icon icon-article-search"></i></a>
+            </div>
+            <!-- Center -->
+            <div class="hn-middle">
+              <h1 class="title">神腦生活誌</h1>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="search-bar-toggle search-bar-float article js-search-box">
+            <input type="text" class="input-search js-search-value" id="article_search_input">
+            <button class="btn btn-query-outline search-btn article js-search-btn" id="articleSearchBtn" data-id="Article">快找</button>
+          </div>
+          <div class="scrolltab-container search article-tabscroll scrolltab-container-inline">
+            <ul role="tablist" class="nav-tabs bordered scroll js-article-tag-scroll" style="width: 1061.19px;">
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/" role="tab" class="nav-link js-lazy active" onclick="sendPageViewEventWithPageName('神腦生活誌_總覽'); location.href=String(this.href).split('#')[0];" aria-selected="true">總覽</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/vna" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_影音挖寶'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">影音挖寶</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/senaoai" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_神腦 AI+'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">神腦 AI+</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/tec" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_科技情報'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">科技情報</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/new" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_遊戲電競'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">遊戲電競</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/promo" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_好物推薦'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">好物推薦</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/5g" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_5G 智慧生活'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">5G 智慧生活</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/store" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_好食餐桌'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">好食餐桌</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/lifecare" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_健康百科'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">健康百科</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/life" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_親子生活'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">親子生活</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/fincare" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_懶人理財'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">懶人理財</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/scare" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_神腦好代誌'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">神腦好代誌</a>
+                </h3>
+              </li>
+              <li class="nav-item" role="presentation">
+                <h3>
+                  <a data-bs-toggle="tab" href="/m/Article/list/b100doctor" role="tab" class="nav-link js-lazy " onclick="sendPageViewEventWithPageName('神腦生活誌_百大醫言堂'); location.href=String(this.href).split('#')[0];" aria-selected="false" tabindex="-1">百大醫言堂</a>
+                </h3>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content scrolltab">
+            <div id="article-tag-vna" data-tag="vna" data-page="1" data-totpage="35" role="tabpanel" class="tab-pane active">
+              <div class="article-list-container clearfix" data-tag="vna">
+                <div class="slider">
+                  <div class="bx-wrapper" style="max-width: 100%;">
+                    <div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 260.688px;">
+                      <div class="slider-view js-bxslider" data-pause="5000" data-speed="500" data-pagertype="full" data-controls="false" data-pagercustom="#js-slider-control-vna" style="width: 5215%; position: relative; transition-duration: 0.5s; transform: translate3d(-1004px, 0px, 0px);">
+                        <div class="item bx-clone" style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="true">
+                          <a href="/Article/detail/2290" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/0ad8281b-916c-4f1e-9860-449ade2f5a24.jpg" alt="舊手機回收發揮最大價值！告訴你環保又能賺回饋的方法">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">舊手機回收發揮最大價值！告訴你環保又能賺回饋的方法</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class=" item " style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="true">
+                          <a href="https://www.youtube.com/watch?v=8rdRuTLv5sA" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/5ecce161-395c-47d4-b7a1-ddefa26d865d.jpg" alt="《寶可夢傳說 Z-A》重返密阿雷市！全新超級進化系統與即時戰鬥體驗震撼登場">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">《寶可夢傳說 Z-A》重返密阿雷市！全新超級進化系統與即時戰鬥體驗震撼登場</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class=" item " style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="false">
+                          <a href="/Article/detail/2609" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/77ce9e30-f749-4730-9ba9-873b3ea22f93.jpg" alt="【神級人物】從台8女神到電商CEO 李燕的美麗新革命">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">【神級人物】從台8女神到電商CEO 李燕的美麗新革命</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class=" item " style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="true">
+                          <a href="/Article/detail/2588" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/8bf0503a-38f7-43d9-875b-eec31a89a454.png" alt="從芯革新 安全新世代 MEGA KING 準固態防爆磁吸行動電源">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">從芯革新 安全新世代 MEGA KING 準固態防爆磁吸行動電源</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class=" item " style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="true">
+                          <a href="/Article/detail/2601" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/373d90b2-9d92-4fb5-ad84-8826d58cdbdd.jpg" alt="iPhone 17、iPhone Air 與 iPhone 17 Pro 選購指南">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">iPhone 17、iPhone Air 與 iPhone 17 Pro 選購指南</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class=" item " style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="true">
+                          <a href="/Article/detail/2290" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/0ad8281b-916c-4f1e-9860-449ade2f5a24.jpg" alt="舊手機回收發揮最大價值！告訴你環保又能賺回饋的方法">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">舊手機回收發揮最大價值！告訴你環保又能賺回饋的方法</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="item bx-clone" style="float: left; list-style: none; position: relative; width: 375px;" aria-hidden="true">
+                          <a href="https://www.youtube.com/watch?v=8rdRuTLv5sA" target="_blank">
+                            <img src="https://static.senao.com.tw/Scare/media/5ecce161-395c-47d4-b7a1-ddefa26d865d.jpg" alt="《寶可夢傳說 Z-A》重返密阿雷市！全新超級進化系統與即時戰鬥體驗震撼登場">
+                            <div class="slider-item-title clearfix">
+                              <span class="article-title">《寶可夢傳說 Z-A》重返密阿雷市！全新超級進化系統與即時戰鬥體驗震撼登場</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bx-controls"></div>
+                  </div>
+                  <div id="js-slider-control-vna" class="slider-control clearfix">
+                    <a data-slide-index="0" href="javascript:;" class="js-slider-btn"></a>
+                    <a data-slide-index="1" href="javascript:;" class="js-slider-btn active"></a>
+                    <a data-slide-index="2" href="javascript:;" class="js-slider-btn"></a>
+                    <a data-slide-index="3" href="javascript:;" class="js-slider-btn"></a>
+                    <a data-slide-index="4" href="javascript:;" class="js-slider-btn"></a>
+                  </div>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/3109">
+                    <img src="https://static.senao.com.tw/Scare/media/791f8171-758b-47c8-b05a-0317a3f7c18f.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">領年終壓歲錢必買：2026 年 Nintendo Switch 2 遊戲終極指南</div>
+                      <div class="article-short-des">想知道 Nintendo Switch 2 上市半年後，哪些遊戲最值得入手嗎？本文深入分析 2026 年必玩大作，涵蓋開放世界、革新 RPG、派對同樂及動作挑戰，助您年終、壓歲錢精準投資，暢享 Switch 2 次世代遊戲體驗。</div>
+                      <div class="article-datetime">2026-01-28 17:37:00</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/3084">
+                    <img src="https://static.senao.com.tw/Scare/media/87a7251f-171c-40c1-baff-b0167309da2e.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【星事神最懂】三星 One Hand Operation+ 操作教學：善用單手模式，打造專屬手勢捷徑，提升使用效率！</div>
+                      <div class="article-short-des">想讓手機操作更順手嗎？本文深入教學 One Hand Operation+ App，教你如何設定客製化手勢、調整控點大小與色彩，輕鬆單手操控，提升你的 Galaxy 手機使用體驗！</div>
+                      <div class="article-datetime">2026-01-21 11:04:00</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/2656">
+                    <img src="https://static.senao.com.tw/Scare/media/34ba279e-96ac-4bc4-ba24-4860ae50f20b.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】AirPods Pro 3 即時翻譯：結合 Apple Intelligence，享受智慧翻譯新體驗</div>
+                      <div class="article-short-des">想知道如何利用 AirPods Pro 3 實現即時翻譯嗎？本文深入介紹 Apple Intelligence 的智慧功能，包括寫作工具、影像樂園，並詳細教學 AirPods Pro 3 的即時翻譯設定與操作步驟，輕鬆突破語言隔閡，讓您的溝通更加流暢無礙！</div>
+                      <div class="article-datetime">2025-12-15 16:27:00</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/2652">
+                    <img src="https://static.senao.com.tw/Scare/media/37b2673a-6456-4144-9bd0-80ea6e98f413.png" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】行動電源不知怎麼挑？ 2025 年爆款一次看！</div>
+                      <div class="article-short-des">出門早上電量 90%，結果到下午兩點只剩 12%， 明明沒做什麼只是回了幾則訊息、刷了 IG、追了半集劇… 手機立刻進入省電模式，你也開始進入緊張模式。 行動電源就是在你「以為還撐得住、結果根本沒電」的時候，最需要的東西。 但現在行動電源的種類這麼多：磁吸式、直插式、輕薄型、支架型、準固態、快充 20W、無線 Qi2…到底該買哪一種？ 別擔心，行動電源不知怎麼挑？ 2025 年爆款一次看！幫你找到最適合的那一顆！</div>
+                      <div class="article-datetime">2025-12-08 11:32:20</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/2642">
+                    <img src="https://static.senao.com.tw/Scare/media/be03ce18-a285-4d10-b97c-506e8bfb4f6f.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】養好身體從呼吸開始：LG AeroHit 360° 為小坪數打造清爽日常</div>
+                      <div class="article-short-des">台灣的空氣狀況，一直是生活裡不可忽視的存在。 平常一走上街，眼前看不見什麼異狀，但空氣裡的 PM2.5、PM1.0 卻已悄悄升高。偶爾一波東北季風、一場境外污染、一陣霾害靠近，就會感覺鼻子特別不舒服、喉嚨乾乾的、甚至晚上睡覺都睡不好。這些看似微小的變化，其實都是空氣品質造成的。</div>
+                      <div class="article-datetime">2025-11-21 16:04:26</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/2608">
+                    <img src="https://static.senao.com.tw/Scare/media/e8df67d0-5dbc-4677-8741-452044bc7b0e.png" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】行動電源起火頻傳！別讓你的充電變「危險行為」揭開準固態電池的安全革命</div>
+                      <div class="article-short-des">日本京都某飯店凌晨大火，超過 2,000 名房客緊急疏散，起火原因竟是一顆「行動電源」。 消防單位調查後指出：房間插座上的行動電源在充電過程中「自燃」。 雖然沒有人受傷，但消息一出，立刻引起網友熱議。 這不是個案，近幾年行動電源過熱、起火、甚至爆炸的事件層出不窮。 想想看，我們每天手機、平板、筆電都離不開行動電源，如果它出問題，後果可不是小事。</div>
+                      <div class="article-datetime">2025-10-14 11:55:54</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/2600">
+                    <img src="https://static.senao.com.tw/Scare/media/cfc6f496-c7eb-4cbe-8afb-bd1a5ef4ee2a.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】忙碌生活也能健康料理。智慧廚電煮出美味！</div>
+                      <div class="article-short-des">在台灣，許多上班族、雙薪家庭、學生，幾乎天天都在外食。早餐是便利商店、午餐買便當、晚餐就叫外送。看似方便，但吃久了不是油膩過量、就是營養失衡，很多人都想吃得健康，但就是沒辦法。 其實根本問題不是「想不想煮」，而是 「煮飯耗時太長」。這也是為什麼近幾年廚房小家電愈來愈受到歡迎，因為它們能把「煮飯」變得更快速、簡單，甚至比外食還要方便。</div>
+                      <div class="article-datetime">2025-09-30 16:50:14</div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 文章區 -->
+                <div class="article-list-item js-lazy">
+                  <a href="/m/Article/detail/2595">
+                    <img src="https://static.senao.com.tw/Scare/media/222add87-66ad-46be-b192-b9d880b21be6.png" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】一殼到底。超級全能 Mega King iPhone17系列多功能旋轉立架保護殼！</div>
+                      <div class="article-short-des">對許多人來說，買新 iPhone 幾乎已經是一種「年度儀式」。 還記得這次看到iPhone 17 系列發表的時候，全新升級的螢幕、鏡頭模組以及順到不行的操作感，真的讓人忍不住直接購買，但花了大把鈔票買新機，怎麼可能讓它赤裸裸？摔一次機殼掉漆、鏡頭刮傷，都會相當捨不得！ 所以買新 iPhone 的同時，一定要幫它挑一件好看又實用的「戰服」</div>
+                      <div class="article-datetime">2025-09-24 18:18:09</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2588">
+                    <img src="https://static.senao.com.tw/Scare/media/5259e6dc-6511-4048-812f-fcbfeef9184c.png" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】從芯革新 安全新世代 MEGA KING 準固態防爆磁吸行動電源</div>
+                      <div class="article-short-des">從早到晚，從工作到娛樂，行動電源早已不只是「可有可無的小物」，而是我們的生活續命神器，大家心裡是不是也曾出現過一絲疑問：「這顆行動電源到底安不安全？」</div>
+                      <div class="article-datetime">2025-09-22 12:01:36</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2586">
+                    <img src="https://static.senao.com.tw/Scare/media/9378ff39-300d-4c17-9cf5-00499030b53b.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【神來點蘋】iPhone 17 系列全新上市！iPhone Air 超薄震撼登場，ProMotion 全系列都有</div>
+                      <div class="article-short-des">iPhone 17 系列重磅登場！iPhone Air 史上最薄 5.6mm、全系列 120Hz ProMotion、Center Stage 前置相機智慧拍攝、4,800 萬像素融合相機系統、iPhone 17 Pro 八鏡頭 200mm 超長焦距、雙向同拍前後鏡頭同錄。</div>
+                      <div class="article-datetime">2025-09-19 10:59:36</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2581">
+                    <img src="https://static.senao.com.tw/Scare/media/4b892660-326f-459c-aa9c-465041e99f8c.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【神級玩家】《卡比的馭天飛行者》Nintendo Switch 2 獨占新作震撼登場！</div>
+                      <div class="article-short-des">《卡比的馭天飛行者》Nintendo Switch 2 獨占新作，櫻井政博親自操刀！粉紅惡魔回歸天際，簡單操作配合戰略深度，支援 16 人城市競賽模式。經典角色齊聚，複製能力不再專屬卡比，多樣飛行器任你選擇，隨機事件帶來無限驚喜。</div>
+                      <div class="article-datetime">2025-09-15 10:11:11</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2573">
+                    <img src="https://static.senao.com.tw/Scare/media/91733d19-135f-4c56-b0db-3df961046692.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】投一票，拿大獎！2025 短影音人氣獎投票抽好禮活動開跑！</div>
+                      <div class="article-short-des">你喜歡看短影音嗎？想為你支持的創作者應援，同時為自己贏得豐富好禮嗎？神腦基金會 2025 短影音競賽人氣獎投票抽獎活動正式開跑！這不只是一場單純的網路投票，更是你把最新手機、智慧家電等大獎帶回家的絕佳機會！</div>
+                      <div class="article-datetime">2025-09-03 11:55:00</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2569">
+                    <img src="https://static.senao.com.tw/Scare/media/20766806-d3b8-48a8-b4b0-a1158a1e300c.png" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】神腦 300 元回饋金聰明花法：Nintendo Switch 2 配件選購完全指南</div>
+                      <div class="article-short-des">300 元神腦幣使用指南！詳解 Nintendo Switch 2 配件選購策略，包含 Joy-Con 2 方向盤、microSD Express 記憶卡、控制器組與攝影機的價格分析。掌握神腦幣折抵規則，讓您的遊戲配件投資發揮最大效益，打造全新的次世代遊戲體驗。</div>
+                      <div class="article-datetime">2025-08-28 15:53:00</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2556">
+                    <img src="https://static.senao.com.tw/Scare/media/3b3f50ec-633e-47e5-ad50-3066dbbbdf54.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【特別企劃】南珉貞現身三星神腦水湳複合店！簽名球限量抽＋3C優惠懶人包</div>
+                      <div class="article-short-des">韓籍啦啦隊女神南珉貞降臨台中！化身一日店長親臨三星神腦複合店，不僅為粉絲帶來近距離互動機會，更加碼推出簽名球抽獎活動，粉絲千萬別錯過！</div>
+                      <div class="article-datetime">2025-08-12 17:50:00</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2540">
+                    <img src="https://static.senao.com.tw/Scare/media/cf2b4288-bc79-45c9-9f42-f50fba79249c.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】力量狂野的香蕉大冒險！《咚奇剛 蕉力全開》Switch 2 獨占強勢登場</div>
+                      <div class="article-short-des">《咚奇剛 蕉力全開》Switch 2 獨占新作震撼登場！</div>
+                      <div class="article-datetime">2025-07-21 11:35:23</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="article-list-item">
+                  <a href="/m/Article/detail/2530">
+                    <img src="https://static.senao.com.tw/Scare/media/b8ef76d5-4821-4550-b87d-1bbf930df947.jpg" alt="文章圖">
+                    <div class="article-item-title">
+                      <div class="tagfield clearfix"></div>
+                      <div class="article-title">【人氣精選】MEGA KING 雙層 TPU 漂浮氣墊防水袋：實用的手機防水解決方案</div>
+                      <div class="article-short-des">MEGA KING 雙層 TPU 漂浮氣墊防水手機袋是一款實用的防水配件，適合日常的水上活動和防水需求。IPX8 認證提供了基本的防水保障，高透明 TPU 材質則讓手機在水下中也清晰可見，並能輕鬆操作。</div>
+                      <div class="article-datetime">2025-07-11 09:48:39</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="go-to-top">
+              <i class="icon icon-gotop"></i>
+            </a>
+          </div>
+        </main>
+      </div>
+      <footer class="fixed bottom">
+        <!-- cookie popup 視窗 -->
+        <!-- 網站有紀錄 cookie 的提醒視窗 -->
+        <div class="model-cookie fixed" id="model-cookie" style="display:none">
+          <div class="container text-center">
+            <a class="icon icon-close pull-right" onclick="cancelCookie();"></a>
+            <p class="p-inline">本網站使用cookies以提供更優質的購物體驗，若您繼續瀏覽本網站內容，即表示您同意本網站使用cookie。如欲了解更多資訊，請參閱本網站之 <a class="blue underline" href="/m/FAQ/showTerms#privacy">隱私權政策</a>
+            </p>
+            <div class="text-center spacing top sm">
+              <a class="btn btn-query btn-round" href="#" onclick="agreeCookie();">我同意</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <!-- 單元當頁加active-->
+          <a class="f_menu_01" href="/m" onclick="forwardAndSendGa4('HomePage');">首頁</a>
+          <a class="f_menu_02" href="/m/Favorite" onclick="forwardAndSendGa4('Favorite');">收藏清單</a>
+          <a class="f_menu_06" href="/m/live" onclick="forwardAndSendGa4('Live');">影音</a>
+          <a class="f_menu_04" href="https://stgcart.senao.com.tw/m/cart/choice" onclick="forwardAndSendGa4('Cart');">購物車 <span id="cart-items-total">0</span></a>
+          <a class="f_menu_05" onclick="javascript:alert('請先登入會員！');location.href='/login?redirect=/m/Member';" title="會員中心">會員中心</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

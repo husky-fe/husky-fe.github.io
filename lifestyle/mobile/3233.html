@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="lifestyle-mobile.css">
+  </head>
+  <body>
+    <div id="overlay" class="push-overlay"></div>
+    <div class="container">
+      <div class="wrapper">
+        <header class="fixed top">
+          <div class="header-navbar">
+            <!-- Left -->
+            <div class="hn-left">
+              <a href="javascript: history.go(-1);" class="btn-link">
+                <i class="icon icon-arrow-left"></i>
+              </a>
+            </div>
+            <!-- Right -->
+            <div class="hn-right">
+              <a href="" class="btn-link fontsizeset-btn">
+                <i class="icon icon-fontsetting"></i>
+              </a>
+              <a href="#shareBox" class="btn-link btn-share-with-article">
+                <i class="icon icon-share-white"></i>
+              </a>
+            </div>
+            <!-- Center -->
+            <div class="hn-middle">
+              <h1 class="title"></h1>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="fontsize-control-bar">
+            <span class="label">文字大小</span>
+            <div data-view="#js-fontsize-view" class="fontsize-control-btn-box js-fontsize">
+              <a href="javascript:void(0);" data-size="small" class="btn-link">
+                <i class="icon icon-fontsize-small"></i>
+              </a>
+              <a href="javascript:void(0);" data-size="medium" class="btn-link">
+                <i class="icon icon-fontsize-midden"></i>
+              </a>
+              <a href="javascript:void(0);" data-size="large" class="btn-link">
+                <i class="icon icon-fontsize-large"></i>
+              </a>
+            </div>
+          </div>
+          <div id="shareBox" class="share-dialog">
+            <div class="dialog-content">
+              <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fonline.senao.com.tw%2Fm%2FArticle%2Fdetail%2F3107" class="btn btn-share-fb">facebook 分享</a>
+              <a target="_blank" href="http://line.naver.jp/R/msg/text/?https%3A%2F%2Fonline.senao.com.tw%2Fm%2FArticle%2Fdetail%2F3107" class="btn btn-share-line">LINE 分享</a>
+            </div>
+          </div>
+          <div class="iframe-wrap article">
+            <div class="article-head">
+              <h1>【神腦 AI+】Google AI 方案全面解析：Plus、Pro、Ultra 完整比較與選擇指南</h1>
+              <!-- <span class="article-tag article-tag-class5">應用程式</span> -->
+              <span class="datetime">
+                <i class="icon icon-time"></i>
+                2026-01-28 13:33:00
+              </span>
+            </div>
+            <div id="js-fontsize-view" class="article-body">
+              <section style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 100%;">
+                <h2>表格樣式壓力測試 (Table Stress Test)</h2>
+                <p>以下包含五種不同結構的表格，請檢視在您的 CMS 前台顯示是否正常。</p>
+                <h3>1. 基礎語意化表格 (Basic Semantic Table)</h3>
+                <p>僅使用基礎 HTML 標籤，無任何 inline CSS，測試貴站預設樣式。</p>
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-bottom: 30px;">
+                  <caption>2024 年度關鍵字成長率</caption>
+                  <thead>
+                    <tr>
+                      <th>排名</th>
+                      <th>關鍵字</th>
+                      <th>搜尋量</th>
+                      <th>趨勢</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>AI 生成繪圖</td>
+                      <td>150,000</td>
+                      <td>上升</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>短影音行銷</td>
+                      <td>98,000</td>
+                      <td>持平</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>GA4 設定教學</td>
+                      <td>45,000</td>
+                      <td>下降</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="4">資料來源：Google Trends</td>
+                    </tr>
+                  </tfoot>
+                </table>
+                <h3>2. 斑馬紋數據報表 (Zebra Striped Style)</h3>
+                <p>使用 Inline CSS 設定隔行變色，提升閱讀性。</p>
+                <div style="overflow-x: auto;">
+                  <table style="width: 100%; border-collapse: collapse; border: 1px solid #ddd; margin-bottom: 30px;">
+                    <thead>
+                      <tr style="background-color: #0056b3; color: white;">
+                        <th style="padding: 12px; text-align: left;">專案名稱</th>
+                        <th style="padding: 12px; text-align: right;">預算 (TWD)</th>
+                        <th style="padding: 12px; text-align: center;">負責人</th>
+                        <th style="padding: 12px; text-align: center;">狀態</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="background-color: #f2f2f2;">
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">SEO 內容優化</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">$50,000</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center;">王小明</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center; color: green;">進行中</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">社群廣告投放</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">$120,000</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center;">李大華</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center; color: orange;">審核中</td>
+                      </tr>
+                      <tr style="background-color: #f2f2f2;">
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">KOL 合作案</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">$85,000</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center;">陳美麗</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center; color: red;">已結案</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">網站改版 UX</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: right;">$200,000</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center;">張工程</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center; color: green;">進行中</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h3>3. 複雜結構規格表 (Complex Merge Test)</h3>
+                <p>包含跨列 (Rowspan) 與跨欄 (Colspan) 的高難度測試。</p>
+                <div style="overflow-x: auto;">
+                  <table style="width: 100%; border-collapse: collapse; border: 2px solid #333; margin-bottom: 30px;">
+                    <thead>
+                      <tr style="background-color: #333; color: white;">
+                        <th colspan="2" style="padding: 10px; border: 1px solid #555;">產品分類</th>
+                        <th style="padding: 10px; border: 1px solid #555;">具體規格</th>
+                        <th style="padding: 10px; border: 1px solid #555;">適用族群</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="3" style="padding: 10px; border: 1px solid #999; background-color: #eee; font-weight: bold; width: 15%;">手機 <br> (Mobile) </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">旗艦機型</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Snapdragon 8 Gen 3, 1TB ROM</td>
+                        <td rowspan="2" style="padding: 10px; border: 1px solid #ddd; vertical-align: middle; text-align: center;">科技愛好者 <br> &amp; <br> 商務人士 </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">中階機型</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Snapdragon 7+ Gen 2, 256GB ROM</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">入門機型</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Helio G99, 128GB ROM</td>
+                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">學生 / 長輩</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2" style="padding: 10px; border: 1px solid #999; background-color: #eee; font-weight: bold;">筆電 <br> (Laptop) </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">電競筆電</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">RTX 4090, i9-14900HX</td>
+                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">遊戲玩家</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">文書筆電</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Integrated Graphics, Ultra 5</td>
+                        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">上班族</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h3>4. 方案比較表 (Pricing &amp; Feature Comparison)</h3>
+                <p>模擬價格表，中間欄位為「推薦方案」，測試色彩強調。</p>
+                <div style="overflow-x: auto;">
+                  <table style="width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 30px;">
+                    <thead>
+                      <tr>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; width: 25%;">功能特色</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; width: 25%; background-color: #f9f9f9; color: #777;">免費版 (Free)</th>
+                        <th style="padding: 15px; border: 2px solid #ff9800; border-bottom: none; border-radius: 10px 10px 0 0; width: 25%; background-color: #fff3e0; color: #e65100; font-size: 1.1em;">專業版 (Pro) <br>
+                          <span style="font-size: 0.6em; background: #ff9800; color: white; padding: 2px 5px; border-radius: 3px;">推薦</span>
+                        </th>
+                        <th style="padding: 15px; border-bottom: 2px solid #ddd; width: 25%; background-color: #f9f9f9; color: #777;">企業版 (Ent)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee;">關鍵字查詢</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">10 組/天</td>
+                        <td style="padding: 12px; border-left: 2px solid #ff9800; border-right: 2px solid #ff9800; border-bottom: 1px solid #ffe0b2; background-color: #fff3e0; text-align: center; font-weight: bold;">無限制</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">無限制 + API</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee;">網站健檢</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">❌</td>
+                        <td style="padding: 12px; border-left: 2px solid #ff9800; border-right: 2px solid #ff9800; border-bottom: 1px solid #ffe0b2; background-color: #fff3e0; text-align: center; font-weight: bold;">每月 5 次</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">即時監控</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee;">報表匯出</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">PDF 僅限首頁</td>
+                        <td style="padding: 12px; border-left: 2px solid #ff9800; border-right: 2px solid #ff9800; border-bottom: 2px solid #ff9800; background-color: #fff3e0; text-align: center; font-weight: bold;">PDF / Excel</td>
+                        <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">客製化白標報表</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <h3>5. 技術參數監控 (High Contrast / Dark Theme)</h3>
+                <p>模擬深色主題的技術區塊。</p>
+                <div style="background-color: #1a1a1a; padding: 20px; border-radius: 8px;">
+                  <table style="width: 100%; border-collapse: collapse; font-family: 'Courier New', monospace;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid #444;">
+                        <th style="color: #00ff00; text-align: left; padding: 10px;">TIMESTAMP</th>
+                        <th style="color: #00ff00; text-align: left; padding: 10px;">SERVER_ID</th>
+                        <th style="color: #00ff00; text-align: left; padding: 10px;">STATUS</th>
+                        <th style="color: #00ff00; text-align: right; padding: 10px;">LATENCY</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="color: #ddd; padding: 8px;">2025-01-01 12:00:01</td>
+                        <td style="color: #ddd; padding: 8px;">TW-TPE-01</td>
+                        <td style="color: #2ecc71; padding: 8px;">[OK]</td>
+                        <td style="color: #ddd; padding: 8px; text-align: right;">12ms</td>
+                      </tr>
+                      <tr>
+                        <td style="color: #ddd; padding: 8px;">2025-01-01 12:00:02</td>
+                        <td style="color: #ddd; padding: 8px;">US-NYC-04</td>
+                        <td style="color: #f1c40f; padding: 8px;">[WARN]</td>
+                        <td style="color: #ddd; padding: 8px; text-align: right;">150ms</td>
+                      </tr>
+                      <tr>
+                        <td style="color: #ddd; padding: 8px;">2025-01-01 12:00:03</td>
+                        <td style="color: #ddd; padding: 8px;">JP-TKY-02</td>
+                        <td style="color: #e74c3c; padding: 8px;">[FAIL]</td>
+                        <td style="color: #ddd; padding: 8px; text-align: right;">TIMEOUT</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="fixed bottom">
+        <!-- cookie popup 視窗 -->
+        <!-- 網站有紀錄 cookie 的提醒視窗 -->
+        <div class="model-cookie fixed" id="model-cookie" style="display:none">
+          <div class="container text-center">
+            <a class="icon icon-close pull-right" onclick="cancelCookie();"></a>
+            <p class="p-inline">本網站使用cookies以提供更優質的購物體驗，若您繼續瀏覽本網站內容，即表示您同意本網站使用cookie。如欲了解更多資訊，請參閱本網站之 <a class="blue underline" href="/m/FAQ/showTerms#privacy">隱私權政策</a>
+            </p>
+            <div class="text-center spacing top sm">
+              <a class="btn btn-query btn-round" href="#" onclick="agreeCookie();">我同意</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <!-- 單元當頁加active-->
+          <a class="f_menu_01" href="/m" onclick="forwardAndSendGa4('HomePage');">首頁</a>
+          <a class="f_menu_02" href="/m/Favorite" onclick="forwardAndSendGa4('Favorite');">收藏清單</a>
+          <a class="f_menu_06" href="/m/live" onclick="forwardAndSendGa4('Live');">影音</a>
+          <a class="f_menu_04" href="https://stgcart.senao.com.tw/m/cart/choice" onclick="forwardAndSendGa4('Cart');">購物車 <span id="cart-items-total">0</span></a>
+          <a class="f_menu_05" onclick="javascript:alert('請先登入會員！');location.href='/login?redirect=/m/Member';" title="會員中心">會員中心</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
