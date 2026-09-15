@@ -764,11 +764,15 @@ a:hover > .icon-share-fb {
   position: relative;
 }
 .js-livenews-gallery-slider .swiper-pagination.swiper-pagination-bullets {
-  width: 25%;
+  width: 100%;
   position: absolute;
   right: 0;
   left: auto;
   bottom: 16px;
+  display: flex;
+  items-align: center;
+  justify-content: center;
+  gap: 6px;
 }
 .js-livenews-gallery-slider .swiper-pagination-bullet {
   padding: 4px;

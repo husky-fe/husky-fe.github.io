@@ -1,0 +1,124 @@
+@use "sass:math";
+@use "sass:string";
+@use "sass:meta";
+@use "sass:map";
+
+// Functions
+// ------------------
+@function strip-unit($number) {
+	@if meta.type-of($number) == 'number' and not math.is-unitless($number) {
+			@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
+
+// Units
+// ------------------
+@function convert($value: 1rem, $convertUnit: px, $convertBase: 16) {
+  $currentUnit: math.unit($value);
+  $currentNumber: strip-unit($value) * 1;
+  $pointRatio: 1.3333;
+  $convertBaseUnit: math.is-unitless($convertBase);
+
+  @if $currentUnit != $convertUnit {
+    @if not math.is-unitless($convertBase) {
+      @if math.unit($convertBase) != px {
+        @error "convertBase not supported, please use pixel or int";
+      }
+
+      $convertBase: strip-unit($convertBase) * 1;
+    }
+
+    @if $currentUnit == px or string.length($currentUnit) == 0 {
+      @if $convertUnit == em or $convertUnit == rem {
+        @return math.div($currentNumber, $convertBase) + $convertUnit;
+      } @else if $convertUnit == pt {
+        @return math.floor($currentNumber / $pointRatio) + $convertUnit;
+      } @else if $convertUnit == '%' {
+        @return math.percentage($currentNumber / $convertBase);
+      } @else if $convertUnit == px {
+        @return $currentNumber * 1px;
+      } @else if $convertUnit == int {
+        @return $currentNumber;
+      }
+    } @else if $currentUnit == em or $currentUnit == rem {
+      $pixelValue: $currentNumber * $convertBase;
+
+      @if $convertUnit == px {
+        @return $pixelValue + $convertUnit;
+      } @else if $convertUnit == pt {
+        @return math.floor($pixelValue / $pointRatio) + $convertUnit;
+      } @else if $convertUnit == '%' {
+        @return math.percentage($pixelValue / $convertBase);
+      } @else if $convertUnit == int {
+        @return $pixelValue;
+      }
+    } @else if $currentUnit == '%' {
+      $percent2Num: $currentNumber / 100;
+      $percent2Int: $percent2Num * $convertBase;
+
+      @if $convertUnit == px {
+        @return $percent2Int + $convertUnit;
+      } @else if $convertUnit == em or $convertUnit == rem {
+        @return $percent2Num + $convertUnit;
+      } @else if $convertUnit == pt {
+        @return math.floor($percent2Int / $pointRatio) + $convertUnit;
+      } @else if $convertUnit == int {
+        @return $percent2Int;
+      }
+    } @else if $currentUnit == 'pt' {
+      $point2Number: math.ceil($currentNumber * $pointRatio);
+
+      @if $convertUnit == px {
+        @return $point2Number + $convertUnit;
+      } @else if $convertUnit == em or $convertUnit == rem {
+        @return ($point2Number / $convertBase) + $convertUnit;
+      } @else if $convertUnit == '%' {
+        @return math.percentage($point2Number / $convertBase);
+      } @else if $convertUnit == int {
+        @return $point2Number;
+      }
+    } @else {
+      @error "Can`t covert '#{$value}' to unit";
+    }
+  } @else {
+    @return $value;
+  }
+}
+
+@function vw($width, $outerWidth) {
+  @return $width / $outerWidth * 100vw;
+}
+
+@function vh($height, $outerHeight) {
+  @return $height / $outerHeight * 100vh;
+}
+
+@function unit-replace($value, $unit: rem) {
+  @return strip-unit($value) + $unit;
+}
+
+@function remy($value, $font-size: 16) {
+  @return convert($value, rem, $font-size);
+}
+
+@function emy($value, $font-size: 16) {
+  @return convert($value, em, $font-size);
+}
+
+@function numy($value, $base: 16) {
+  @return convert($value, int, $base);
+}
+
+@function pixel($value) {
+  @return $value * 1px;
+}
+
+@function var-color($color, $opacity: 100%) {
+  @return color-mix(in srgb, $color $opacity, transparent);
+}
+
+@function rand($min, $max) {
+  @return math.random($max - $min + 1) + $min - 1;
+}
