@@ -1443,6 +1443,10 @@ a:hover > .icon-share-fb {
   position: relative;
   padding: 12px 0;
 }
+.card .title {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
 
 .flex {
   display: flex;

@@ -1556,6 +1556,11 @@ a:hover {
     position: relative;
     padding: 12px 0;
   }
+
+  .title {
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
 }
 
 .flex {
