@@ -745,6 +745,10 @@ a:hover {
     position: relative;
     margin-right: 0px;
     margin-top: 16px;
+
+    [class*=col-]:has(~ .right-caption) {
+      padding: 0;
+    }
   }
 
   &.aside {

@@ -665,6 +665,9 @@ a:hover > .icon-share-fb {
   margin-right: 0px;
   margin-top: 16px;
 }
+.slider.home [class*=col-]:has(~ .right-caption) {
+  padding: 0;
+}
 .slider.aside {
   height: auto;
   margin-right: 0;
