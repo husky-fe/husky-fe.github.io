@@ -668,6 +668,11 @@ a:hover > .icon-share-fb {
 .slider.home [class*=col-]:has(~ .right-caption) {
   padding: 0;
 }
+.slider.home .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .slider.aside {
   height: auto;
   margin-right: 0;

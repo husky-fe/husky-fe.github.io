@@ -749,6 +749,12 @@ a:hover {
     [class*=col-]:has(~ .right-caption) {
       padding: 0;
     }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &.aside {
