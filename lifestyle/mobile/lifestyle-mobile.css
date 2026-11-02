@@ -284,6 +284,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   min-width: 64px;
 }
 
+.menu-trigger {
+  position: relative;
+  width: 24px;
+  height: 22px;
+  cursor: pointer;
+}
+.menu-trigger .icon-menu,
+.menu-trigger .icon-menu::before,
+.menu-trigger .icon-menu::after {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  background: #FFF;
+}
+.menu-trigger .icon-menu {
+  top: 10px;
+  left: 0;
+}
+.menu-trigger .icon-menu::before, .menu-trigger .icon-menu::after {
+  content: "";
+  right: 0;
+}
+.menu-trigger .icon-menu::before {
+  bottom: 8px;
+}
+.menu-trigger .icon-menu::after {
+  top: 8px;
+}
+
 .hn-right {
   display: flex;
   align-items: center;
@@ -942,6 +973,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .fontsize-control-btn-box .icon {
   width: 26px;
   height: 26px;
+}
+.fontsize-control-btn-box .btn-link:hover .icon-fontsize-small {
+  background-image: url("https://online.senao.com.tw/public/images/icons/icon-fontsize-small-fill.svg");
+}
+.fontsize-control-btn-box .btn-link:hover .icon-fontsize-midden {
+  background-image: url("https://online.senao.com.tw/public/images/icons/icon-fontsize-midden-fill.svg");
+}
+.fontsize-control-btn-box .btn-link:hover .icon-fontsize-large {
+  background-image: url("https://online.senao.com.tw/public/images/icons/icon-fontsize-large-fill.svg");
+}
+
+.article-body.small {
+  font-size: 12px;
+}
+.article-body.small div, .article-body.small p {
+  font-size: 12px;
+}
+.article-body.large {
+  font-size: 18px;
+}
+.article-body.large div, .article-body.large p {
+  font-size: 18px;
 }
 
 .share-dialog {

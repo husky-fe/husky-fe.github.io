@@ -320,6 +320,43 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   min-width: 64px;
 }
 
+.menu-trigger {
+  position: relative;
+  width: 24px;
+  height: 22px;
+  cursor: pointer;
+
+  .icon-menu,
+  .icon-menu::before,
+  .icon-menu::after {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    background: #FFF;
+  }
+
+  .icon-menu {
+    top: 10px;
+    left: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      right: 0;
+    }
+
+    &::before {
+      bottom: 8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+}
+
 .hn-right {
   display: flex;
   align-items: center;
@@ -1056,6 +1093,39 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     .icon {
       width: 26px;
       height: 26px;
+    }
+
+    .btn-link:hover {
+      .icon-fontsize-small {
+        background-image: url('https://online.senao.com.tw/public/images/icons/icon-fontsize-small-fill.svg');
+      }
+
+      .icon-fontsize-midden {
+        background-image: url('https://online.senao.com.tw/public/images/icons/icon-fontsize-midden-fill.svg');
+      }
+
+      .icon-fontsize-large {
+        background-image: url('https://online.senao.com.tw/public/images/icons/icon-fontsize-large-fill.svg');
+      }
+    }
+  }
+}
+
+// 文章字級，class 由 .js-fontsize 切換
+.article-body {
+  &.small {
+    font-size: 12px;
+
+    div, p {
+      font-size: 12px;
+    }
+  }
+
+  &.large {
+    font-size: 18px;
+
+    div, p {
+      font-size: 18px;
     }
   }
 }
